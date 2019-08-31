@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Caterer">
+
+
+    <ScrollView
+
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/personal_details"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/personal_details"
+                android:layout_marginBottom="10dp"
+                android:hint="NAME"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_margin="10dp"
+                android:hint="EMAIL"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/emailverify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:padding="10dp"
+                android:text="verify email"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp">
+
+            </Button>
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailverify"
+                android:layout_margin="10dp"
+                android:hint="ADDRESS"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address"
+                android:layout_margin="10dp"
+                android:hint="PINCODE"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pincode"
+                android:layout_margin="10dp"
+                android:hint="CITY"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_margin="10dp"
+                android:hint="COUNTRY"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/country"
+                android:layout_margin="10dp"
+                android:hint="PHONE NO."
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/phoneverify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneno"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:background="#000000"
+                android:padding="10dp"
+                android:text="verify phone no."
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                >
+
+            </Button>
+
+            <EditText
+                android:id="@+id/aadhaar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneverify"
+                android:layout_margin="10dp"
+                android:hint="AADHAAR N0. (XXXX XXXX XXXX)"
+                android:textAlignment="center"
+                android:textSize="20dp">
+
+            </EditText>
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/aadhaar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#000"
+                android:text="save"
+                android:textColor="#fff"
+                android:textSize="20dp">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

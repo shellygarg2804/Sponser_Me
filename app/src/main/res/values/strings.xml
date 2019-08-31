@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Cater Us</string>
+    <string name="user_option">TEll US WHO ARE YOU</string>
+    <string name="user">USER</string>
+    <string name="sponser">CATERER</string>
+    <string name="personal_details">*****PERSONAL DETAILS******</string>
+    <string-array name="strength_array">
+        <item>100-1000</item>
+        <item>1000-2000</item>
+        <item>2000-3000+</item>
+    </string-array>
+    <string-array name="food_preferences">
+        <item>"Food Preference"</item>
+        <item>Veg</item>
+        <item>Non Veg</item>
+        <item>Both</item>
+    </string-array>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#BDBDBD"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#000"
+        android:layout_height="150dp">
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:id="@+id/logo2"
+        />
+<EditText
+    android:layout_centerVertical="true"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_margin="20dp"
+    android:hint="User-Name"
+    android:id="@+id/username"
+    />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/username"
+        android:hint="Password"
+        android:layout_margin="20dp"/>
+    <Button
+        android:id="@+id/sumbit_details"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/password"
+        android:layout_margin="20dp"
+        android:background="#000"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context=".User">
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="591dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="277dp"
+        android:layout_height="112dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_below="@id/logo"
+        android:hint="NAME"
+        android:layout_marginTop="60dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="LOCATION"
+        android:layout_height="50dp"
+        android:id="@+id/user_location"
+        android:layout_below="@id/user_name"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:hint="STRENGTH OF THE INSTITUTION"
+        android:layout_height="50dp"
+        android:id="@+id/user_strength"
+        android:layout_below="@id/user_location"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/user_hostel"
+        android:layout_below="@id/user_strength"
+        android:layout_margin="20dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/food_preference"
+        android:layout_below="@id/user_strength"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/food_preference"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+</RelativeLayout>
